@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import {Listado} from './Listado';
+import { Seccion } from './Seccion';
 
 function App() {
   return (
@@ -18,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+       
+      <Seccion/>
+      <Listado/>
     </div>
   );
 }
