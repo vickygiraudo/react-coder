@@ -1,28 +1,17 @@
-import logo from './logo.svg';
+
 import './App.css';
-import {Listado} from './Listado';
-import { Seccion } from './Seccion';
+import {Navbar} from "./Contenedor/Navbar/Navbar"
+import { ItemListContainer } from './Contenedor/ItemListContainer/ItemListContainer';
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-       
-      <Seccion/>
-      <Listado/>
+      <Navbar/>
+
+      <ItemListContainer greeting="Proyecto React" />
     </div>
   );
 }
